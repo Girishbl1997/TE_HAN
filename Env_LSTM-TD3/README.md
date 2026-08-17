@@ -1,4 +1,4 @@
-# TE_AN — Transformer-Enhanced Deep RL for Autonomous Navigation
+# TE_AN — Transformer-Enhanced Hierarchical DRL for Autonomous Navigation
 ### Phase 2 — Path-Following (PF) Controller: LSTM-TD3 Baseline
 
 This repository contains the  Level-2 path-following
@@ -28,6 +28,6 @@ variants are compared.
 | 2. LPP+PF-LSTM-TD3 | LSTM | Dual-Transformer |
 | 3. LPP+PF-GTrXL-TD3 | GTrXL | Dual-Transformer | 
 
-Algorithm is fixed to TD3 across all arms → architecture is the sole manipulated variable.
+The algorithm is fixed to TD3 across all arms → architecture is the sole manipulated variable.
 
 
