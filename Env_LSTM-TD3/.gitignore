@@ -28,4 +28,7 @@ OS/IDE
 .vscode/
 
 #RL-suite
+#This project imports the RL Dresden Algorithm Suite (`tud_rl`, MarWaltz/TUD_RL) as a base.
+#It is not vendored in this repo and is not pip-installable normally — it must be
+#installed as an editable package (pip install -e )
 Env_LSTM-TD3/tud_rl/
