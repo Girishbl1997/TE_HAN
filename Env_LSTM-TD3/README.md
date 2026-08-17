@@ -2,7 +2,7 @@
 ### Phase 2 — Path-Following (PF) Controller: LSTM-TD3 Baseline
 
 This repository contains the  Level-2 path-following
-controller** baseline for a study on transformer-enhanced deep RL autonomous driving.
+controller baseline for a study on transformer-enhanced deep RL autonomous driving.
 The controller is trained end-to-end in CARLA 0.9.15 (Town10HD_Opt) and follows the
 map centerline; it is the control group against which later planner/architecture
 variants are compared.
