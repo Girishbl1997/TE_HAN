@@ -1,0 +1,39 @@
+# configs/carla_dict_td3.yaml
+
+Env:
+  env_name: "CARLA-v0"
+  state_type: "feature"
+  state_shape: [3, 120, 288]
+  action_space: "continuous"
+  num_actions: 2
+  max_episode_steps: 700
+
+Agent:
+  agent_name: "LSTMTD3DictAgent"
+  gamma: 0.99
+  tau: 0.005
+  buffer_length: 100_000
+  batch_size: 32  
+  optimizer: "Adam"
+  loss: "MSELoss"
+  actor_lr: 0.0001
+  critic_lr: 0.0002
+  policy_delay: 2
+  policy_noise: 0.3
+  policy_noise_clip: 0.5
+  hidden_size: 256
+  sequence_length: 16
+  device: "cuda"
+  seed: 42
+  
+Train:
+  mode: "train"
+  act_start_step: 10000
+  upd_start_step: 10000
+  upd_every: 100
+  total_timesteps: 1_000_000
+  # Add any additional training-specific keys here
+
+
+
+
