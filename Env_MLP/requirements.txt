@@ -1,0 +1,10 @@
+- CARLA 0.9.15, Python 3.11, PyTorch (CUDA 12.x), `tud_rl`, gymnasium, numpy, opencv-python, tensorboard.
+- GPU with ≥ ~28 GB VRAM for the default `buffer_length=100000` (replay buffer is VRAM-resident).
+  For an 8 GB card, run **eval only** and shrink the buffer (see below).
+
+  
+## Quick start
+```bash
+# Train one seed (starts CARLA on CARLA_PORT, then trains)
+export CARLA_PORT=2010 PROJECT_ROOT=$PWD WS=$PWD
+python train_lstm_td3.py <SEED> <PORT>
